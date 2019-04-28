@@ -1,0 +1,267 @@
+header {
+  text-align: center;
+  background-color: #5D537F;
+  color: #FFF;
+}
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  height: 90px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-title {
+    font-size: 1rem;
+  }
+}
+
+.navbar {
+  font-size: 1rem;
+  line-height: 1.75em;
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    padding: 0;
+  }
+}
+
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.25em;
+  color: #4A4A4A;
+}
+
+.h1, h1 {
+  font-size: 2.9rem;
+}
+
+.h2, h2 {
+  font-size: 1.5rem;
+}
+
+.section-container {
+  margin: 15px 30px;
+}
+
+.row-stretch-height {
+  min-height: 100%;
+}
+
+.btn-custom {
+  color: #fff;
+  background-color: #5D537F;
+  border-color: #5D537F;
+  border-radius: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.dark .btn-custom {
+  background-color: #4A90E2;
+}
+
+.half-page-height {
+  height: calc((100vh - ( 90px + 0px + 1.75rem + 5px ) + 4px) / 2);
+}
+
+@media (max-width: 991.98px) {
+  .half-page-height {
+    height: calc((100vh - ( 90px ) + 4px) / 2);
+  }
+}
+
+.full-page-height {
+  height: calc(100vh - ( 90px + 0px + 1.75rem + 5px ) + 4px);
+}
+
+@media (max-width: 991.98px) {
+  .full-page-height {
+    height: calc(100vh - ( 90px ) + 4px);
+  }
+}
+
+section {
+  height: calc(100vh - ( 90px + 0px + 1.75rem + 5px ) + 4px) !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@media (max-width: 991.98px) {
+  section {
+    height: calc(100vh - ( 90px ) + 4px) !important;
+  }
+}
+
+section.section-half {
+  height: calc((100vh - ( 90px + 0px + 1.75rem + 5px ) + 4px) / 2);
+}
+
+@media (max-width: 991.98px) {
+  section.section-half {
+    height: calc((100vh - ( 90px ) + 4px) / 2);
+  }
+}
+
+.img-container, .img-container-h, .img-container-v {
+  text-align: center;
+}
+
+.img-container img, .img-container-h img, .img-container-v img {
+  max-height: calc(100vh - ( 90px + 0px + 1.75rem + 5px ) + 4px);
+}
+
+@media (max-width: 991.98px) {
+  .img-container img, .img-container-h img, .img-container-v img {
+    max-height: calc(100vh - ( 90px ) + 4px);
+  }
+}
+
+.col.img-container-filled {
+  margin-left: -15px;
+  padding-left: 30px;
+  padding-right: 0;
+  overflow: hidden;
+}
+
+.img-container, .img-container-h, .img-container-v {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 991.98px) {
+  .img-container, .img-container-h, .img-container-v {
+    height: 200px;
+  }
+}
+
+.img-container-h {
+  width: 100%;
+  min-height: 100%;
+}
+
+.img-container-v {
+  display: block;
+  min-height: 100%;
+  margin: 0 -15px;
+}
+
+.img-container-shoulder {
+  background-image: url("img/jesper-aggergaard-495757-unsplash.jpg");
+}
+
+.img-container-back {
+  background-image: url("img/toa-heftiba-578093-unsplash.jpg");
+}
+
+.img-container-press {
+  background-image: url("img/massage-2722936_1920.jpg");
+}
+
+.row-full-height {
+  min-height: calc(100vh - ( 90px + 0px + 1.75rem + 5px ) + 4px);
+}
+
+.col-left {
+  border-right: 1px solid #5D537F;
+}
+
+.dark {
+  font-size: 0.9em;
+  background-color: #5D537F;
+  color: #FFF;
+}
+
+th, td {
+  padding: 5px 30px 5px 5px;
+}
+
+.info-panel {
+  background-color: #7D7596;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 1.125rem;
+  margin: 20px;
+}
+
+.info-panel .title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+
+.info-panel a {
+  color: unset;
+}
+
+@media (max-width: 575.98px) {
+  .long-text {
+    font-size: 0.9em;
+  }
+}
+
+.embed-responsive-fill {
+  height: 100%;
+  margin: 0 -15px;
+  width: calc(100% + 30px);
+}
+
+@media (max-width: 991.98px) {
+  .embed-responsive-fill {
+    height: calc((100vh - ( 90px ) + 4px) / 2);
+    width: calc(100% - 30px);
+    margin: 15px;
+  }
+}
+
+.footnote {
+  font-size: 0.75em;
+}
+
+.contact-row, .contact-row-start, .contact-row-end {
+  margin: 20px 5px;
+  word-wrap: break-word;
+}
+
+.contact-row-start {
+  margin-top: 15px;
+}
+
+.contact-row-end {
+  margin-bottom: 0px;
+}
+
+.footer {
+  background-color: #5D537F;
+  color: #FFF;
+  height: 80px;
+  font-size: 1rem;
+  padding: 20px;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.logos img {
+  max-height: 130px;
+  width: auto;
+  margin: 0px 5px 25px 5px;
+}
